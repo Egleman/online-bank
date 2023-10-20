@@ -1,0 +1,30 @@
+.background-circle {
+  position: absolute;
+  width: 712px;
+  height: 712px;
+  border-radius: 100%;
+  background: #E8F8EC;
+  right: -20%;
+  top: -20%;
+  z-index: -1;
+}
+@media (max-width: 606px) {
+  .background-circle {
+    right: -50%;
+  }
+}
+@media (max-width: 500px) {
+  .background-circle {
+    right: -80%;
+  }
+}
+@media (max-width: 425px) {
+  .background-circle {
+    right: -100%;
+  }
+}
+@media (max-width: 380px) {
+  .background-circle {
+    right: -130%;
+  }
+}

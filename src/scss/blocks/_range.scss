@@ -1,0 +1,55 @@
+.range {
+  padding: 100px 0;
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 20px;
+  }
+  &__title {
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 70px;
+    font-weight: 700;
+  }
+  &__select {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    height: 56px;
+    width: 100%;
+    border-bottom: 1px solid #40d271;
+    padding: 0 20px;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: "TTCommonsClassic", sans-serif;
+    background: #fff;
+    appearance: none;
+  }
+  fieldset {
+    position: relative;
+    &:not(:last-of-type) {
+      margin-bottom: 30px;
+    }
+    &::after {
+      border-bottom: 2px solid #40d271;
+      border-right: 2px solid #40d271;
+      color: #40d271;
+      content: "";
+      display: block;
+      font-size: 36px;
+      font-weight: 600;
+      height: 8px;
+      position: absolute;
+      right: 20px;
+      top: calc(50% - 6px);
+      transform: rotate(45deg);
+      width: 8px;
+    }
+  }
+  &__small-text {
+    font-size: 16px;
+    color: #949494;
+    margin-top: 40px;
+  }
+}

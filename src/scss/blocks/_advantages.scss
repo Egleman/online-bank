@@ -1,0 +1,66 @@
+.advantages {
+  padding: 50px 0;
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+  }
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: 2px solid #000;
+    transition: .3s all;
+    background: #fff;
+    &:hover {
+      filter: invert(1);
+      border: 2px solid #000;
+    }
+    img {
+      width: 30px;
+      height: 30px;
+      margin-bottom: 15px;
+    }
+    &-title {
+      font-weight: 700;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+    &-description {
+      text-align: center;
+    }
+    &-link {
+      font-size: 20px;
+      font-weight: 600;
+      text-align: center;
+      text-decoration: underline;
+      display: block;
+      margin-top: auto;
+      color: #000;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+@media (max-width: 1022px) {
+  .advantages {
+    &__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+@media (max-width: 606px) {
+  .advantages {
+    padding: 25px 0;
+    &__grid {
+      grid-template-columns: 1fr;
+      gap: 15px;
+    }
+  }
+}

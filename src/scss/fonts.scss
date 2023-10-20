@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'TTCommonsClassic';
+  src: url('../fonts/TTCommonsClassic-Regular.woff2') format('woff2'),
+  url('../fonts/TTCommonsClassic-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TTCommonsClassic';
+  src: url('../fonts/TTCommonsClassic-DemiBold.woff2') format('woff2'),
+  url('../fonts/TTCommonsClassic-DemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TTCommonsClassic';
+  src: url('../fonts/TTCommonsClassic-Bold.woff2') format('woff2'),
+  url('../fonts/TTCommonsClassic-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
