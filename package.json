@@ -43,6 +43,7 @@
   },
   "dependencies": {
     "inputmask": "^5.0.7",
+    "nouislider": "^15.7.1",
     "simplebar": "^5.3.9",
     "smooth-scrollbar": "^8.8.1",
     "smoothscroll-polyfill": "^0.4.4",

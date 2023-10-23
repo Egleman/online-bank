@@ -1,11 +1,11 @@
 .background-circle {
-  position: absolute;
+  position: fixed;
   width: 712px;
   height: 712px;
   border-radius: 100%;
   background: #E8F8EC;
-  right: -20%;
-  top: -20%;
+  right: -10%;
+  top: -10%;
   z-index: -1;
 }
 @media (max-width: 606px) {

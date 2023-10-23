@@ -1,0 +1,99 @@
+@@include('html/head.html', {
+    "title": "Apply now"
+})
+<body>
+    <div class="background-circle"></div>
+    <section class="apply">
+        <div class="container">
+            <div class="apply__wrapper">
+                <div class="apply__title">Let's find out if we serve your area</div>
+                <p class="apply__answer">Requried fields *</p>
+                <div class="apply__search active">
+                    <p class="apply__label">Enter your ZIP code *</p>
+                    <div>
+                        <input type="number" class="apply__search-input">
+                        <a href="#" class="apply__search-link">Search</a>
+                    </div>
+                </div>
+                <a href="#" class="apply__change-zip">
+                    <img src="./img/icons/label.svg" alt="label">
+                    Click here if you have an offer code
+                </a>
+                <form action="#" class="apply__form">
+                    <p class="apply__label">Your information</p>
+                    <input type="text" placeholder="First name *" name="first_name" data-input="input" data-inp="requried">
+                    <input type="text" placeholder="Middle name *" name="middle_name" data-input="input" data-inp="requried">
+                    <input type="text" placeholder="Last name *" name="last_name" data-input="input" data-inp="requried">
+                    <div class="apply__form-date">
+                        <p class="first">Date of birth *</p>
+                        <p class="second">Must be 18 years of age or older to apply</p>
+                        <div>
+                            <input type="number" placeholder="month *" name="month" data-input="input" data-inp="requried">
+                            <input type="number" placeholder="day *" name="day" data-input="input" data-inp="requried">
+                            <input type="number" placeholder="year *" name="year" data-input="input" data-inp="requried">
+                        </div>
+                    </div>
+                    <div class="apply__form-language">
+                        <p class="first">Preferred language *</p>
+                        <div class="wrap">
+                            <div>
+                                <input type="radio" checked name="language" value="English" id="english" data-input="radio">
+                                <label for="english">English</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="language" value="Spanish" id="spanish" data-input="radio">
+                                <label for="spanish">Spanish</label> 
+                            </div>
+                        </div>
+                    </div>
+                    <p class="apply__label">Contact information</p>
+                    <input type="text" placeholder="Email" name="email" data-input="input">
+                    <input type="text" placeholder="Phone number *" id="phone" name="phone" data-input="input" data-inp="requried">
+                    <div class="apply__form-language">
+                        <p class="first">Phone type *</p>
+                        <div class="wrap">
+                            <div>
+                                <input type="radio" checked name="type_phone" value="Cell" id="cell" data-input="radio">
+                                <label for="cell">Cell</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="type_phone" value="Home" id="home" data-input="radio">
+                                <label for="home">Home</label> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="apply__form-language apply__form-language_gap">
+                        <p class="first">How long have you owned this phone number? *</p>
+                        <div class="wrap">
+                            <div>
+                                <input type="radio" checked name="date_phone" id="1" value="Less than 6 months" data-input="radio">
+                                <label for="1">Less than 6 months</label>
+                            </div>
+                        </div>
+                        <div class="wrap">
+                            <div>
+                                <input type="radio" name="date_phone" id="2" value="6 to 12 months" data-input="radio">
+                                <label for="2">6 to 12 months</label> 
+                            </div>
+                        </div>
+                        <div class="wrap">
+                            <div>
+                                <input type="radio" name="date_phone" id="3" value="1 to 2 years" data-input="radio">
+                                <label for="3">1 to 2 years</label> 
+                            </div>
+                        </div>
+                        <div class="wrap">
+                            <div>
+                                <input type="radio" name="date_phone" id="4" value="More than 2 years" data-input="radio">
+                                <label for="4">More than 2 years</label> 
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit">Verification</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="js/app.min.js"></script>
+</body>
+</html>

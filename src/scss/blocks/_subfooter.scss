@@ -1,0 +1,25 @@
+.subfooter {
+    background: #F9F9F9;
+    padding: 50px 0;
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    p {
+        font-size: 18px;
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-left: 30px;
+    }
+}
+@media (max-width: 606px) {
+    .subfooter {
+        p {
+            font-size: 18px;
+        }
+    }
+}

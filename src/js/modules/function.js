@@ -115,6 +115,25 @@ export const accordion = () => {
         alwaysOpen: false
       });
 }
+export const scrollLinks = () => {
+    const links = document.querySelectorAll('a[data-link="scroll"]');
+    links.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const blockId = link.getAttribute('href');
+            const menu = document.querySelector('.menu');
+            if (menu.classList.contains('active')) {
+                menu.classList.remove('active');
+            }
+            if (document.querySelector(blockId)) {
+                document.querySelector(blockId).scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        })
+    })
+}
 //Открытие модальных окон
 export const openModal = () => {
     const buttons = document.querySelectorAll('[data-toggle]');

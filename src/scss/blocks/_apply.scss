@@ -1,0 +1,198 @@
+.apply {
+    padding: 100px 0;
+    &__wrapper {
+        max-width: 600px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    &__title {
+        font-size: 35px;
+        margin-bottom: 40px;
+        font-weight: 700;
+    }
+    &__answer {
+        color: #d8d8d8;
+        margin-bottom: 20px;
+    }
+    &__label {
+        font-size: 18px;
+        font-weight: 700;
+        padding-left: 15px;
+    }
+    &__search {
+        display: none;
+        flex-direction: column;
+        gap: 3px;
+        margin-bottom: 30px;
+        div {
+            display: flex;
+            gap: 20px;
+        }
+        &-input {
+            height: 64px;
+            border-radius: 8px;
+            border: 1px solid #d8d8d8;
+            padding: 0 15px;
+            font-size: 22px;
+            line-height: 62px;
+            box-sizing: border-box;
+            width: 60%;
+            font-family: 'TTCommonsClassic', sans-serif;
+            &::-webkit-outer-spin-button,
+            &::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+            }
+        }
+        &-link {
+            display: flex;
+            border-radius: 8px;
+            border: 1px solid #d8d8d8;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            color: #d8d8d8;
+            font-weight: 600;
+            width: 40%;
+            box-sizing: border-box;
+            height: 64px;
+            transition: .3s all;
+        }
+        &-link.active {
+            color: #fff;
+            background: #000;
+            border: 1px solid #000;
+        }
+    }
+    &__search.active {
+        display: flex;
+    }
+    &__change-zip {
+        display: none;
+        align-items: center;
+        height: 64px;
+        border-radius: 20px;
+        border: 1px solid black;
+        background: #d8d8d8;
+        font-size: 22px;
+        gap: 15px;
+        padding: 0 15px;
+        width: 100%;
+        box-sizing: border-box;
+        color: #000;
+        margin-bottom: 40px;
+        img {
+            width: 25px;
+            height: 25px;
+        }
+    }
+    &__change-zip.active {
+        display: flex;
+    }
+    &__form {
+        display: none;
+        flex-direction: column;
+        gap: 20px;
+        button {
+            padding: 0;
+            display: flex;
+            border-radius: 8px;
+            border: 1px solid #d8d8d8;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            color: #d8d8d8;
+            font-weight: 600;
+            width: 100%;
+            box-sizing: border-box;
+            height: 64px;
+            transition: .3s all;
+            background: transparent;
+        }
+        button.active {
+            color: #fff;
+            background: #000;
+            border: 1px solid #000;
+        }
+        input {
+            height: 64px;
+            border-radius: 8px;
+            border: 1px solid #d8d8d8;
+            padding: 0 15px;
+            font-size: 22px;
+            line-height: 62px;
+            box-sizing: border-box;
+            font-family: 'TTCommonsClassic', sans-serif;
+            &::-webkit-outer-spin-button,
+            &::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+            }
+        }
+        input.error {
+            border: 1px solid red;
+        }
+        label {
+            font-size: 22px;
+        }
+        &-date {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            .first {
+                font-size: 20px;
+            }
+            .second {
+                font-size: 18px;
+            }
+            div {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 15px;
+                input {
+                    width: 100%;
+                }
+            }
+        }
+        &-language {
+            .first {
+                font-size: 20px;
+                margin-bottom: 3px;
+            }
+            .wrap {
+                display: flex;
+                gap: 20px;
+                div {
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    input {
+                        height: auto;
+                    }
+                }
+            }
+            &_gap {
+                .wrap {
+                    &:not(:last-of-type) {
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+    &__form.active {
+        display: flex;
+    }
+}
+@media (max-width: 606px) {
+    .apply {
+        &__form {
+            &-date {
+                div {
+                    grid-template-columns: 1fr;
+                }
+            }
+        }
+        &__change-zip {
+            font-size: 18px;
+        }
+    }
+}
